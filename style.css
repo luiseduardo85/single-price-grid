@@ -9,14 +9,13 @@ body{
     grid-template-columns: 50% 50%;
     grid-template-rows: 210px 250px;
     font-family: 'Karla', sans-serif;
-    border-radius: 8px;   
+    border-radius: 8px;
 }
 .conteudo{
     grid-column: span 2;
     color: hsl(218, 22%, 67%);
     width: 550px;
-    height: 160px;
-    margin: 30px;
+    margin: 25px;
     font-weight: 400;
 }
 .conteudo > h1{
@@ -27,15 +26,14 @@ body{
 }
 .subscription{
     background-color: hsl(179, 62%, 43%);
-    margin-top: 15px;
     color: hsl(204, 43%, 93%);
     border-radius: 0px 0px 0px 8px;
 }
 .subscription-content{
-    margin: 0px 10px;
+    margin: 0px 25px;
 }
 .title{
-    margin-bottom: 10px;
+    margin-bottom: 18px;
 }
 .dollar{
     font-size: 26px;
@@ -64,7 +62,6 @@ button{
 .why-content{
     background-color: hsla(179, 62%, 43%, 0.80);
     color: hsl(204, 43%, 93%);
-    margin-top: 15px;
     border-radius: 0px 0px 8px 0px;
 }
 .us{
@@ -72,21 +69,28 @@ button{
 }
 @media screen and (max-width: 375px){
     body{
-        width: 375px;
+        width: 370px;
     }
     .grid-container{
-        display: flex;
-        flex-direction: column;
-        width: 300px;
+        display: grid;
+        grid-template-columns: 375px;
+        grid-template-rows: 320px 300px 300px;
     }
     .conteudo{
-        width: 300px;
-        height: 250px;
+       width: 370px;
+       text-align: justify;
     }
     .conteudo > p{
         width: 250px;
     }
+    .subscription{
+        border-radius: 0px;
+    }
+    .why-content{
+        grid-area: 3;
+        border-radius: 0px 0px 8px 8px;
+    }
     .attribution{
-        width: 375px;
+        width: 300px;
     }
 }
